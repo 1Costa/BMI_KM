@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.konstantin.bmi_km.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/backgroundpetals"
+        android:id="@+id/imageView"
+        android:scaleType = "centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0">
+    <TableRow>
+
+        <TextView
+            android:text="@string/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightLable"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/cmValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmValueView"
+            android:layout_span="2"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/cmLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmLabel"
+            android:layout_span="2"
+            android:textStyle="normal|bold"
+            android:gravity="right"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarHeight"
+            android:minHeight="8dip"
+            android:maxHeight="8dip"
+            android:max="150"
+            android:progressDrawable="@android:color/holo_red_light"
+            android:thumb="@drawable/thumb_green" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/ftValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ftValueView"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/ftLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ftLabel"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="@string/inchValue"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inchValueView"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/inchLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inchLabel"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/textView9" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightLabel"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/kgValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kgValueView"
+            android:layout_span="2"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/kgLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kgLabel"
+            android:layout_span="2"
+            android:textStyle="normal|bold"
+            android:gravity="right"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarWeight"
+            android:minHeight="8dip"
+            android:maxHeight="8dip"
+            android:progressDrawable="@android:color/holo_red_light"
+            android:max="200"
+            android:thumb="@drawable/thumb_green" />
+    </TableRow>
+    <TableRow>
+
+
+
+        <TextView
+            android:text="@string/stValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stValueView"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/stLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stLabel"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+        <TextView
+            android:text="@string/lbsValue"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbsValueView"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+        <TextView
+            android:text="@string/lbsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbsLabel"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+    </TableRow>
+
+    </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:stretchColumns="0">
+                <!-- android:layout_alignLeft="@+id/imageViewCalculate" -->
+                <!-- android:layout_alignStart="@+id/imageViewCalculate" -->
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmiResultLabel"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="normal|bold"
+                        android:text="@string/bmi_ResultLabel"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmiResultView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:gravity="right"
+                        android:text="0.0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmiTypeView"
+                        android:paddingTop="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="normal|bold"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        app:srcCompat="@drawable/info"
+                        android:id="@+id/imageDetails"
+                        android:layout_height="56dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/calc"
+            android:id="@+id/imageViewCalculate"
+            android:layout_gravity="bottom|center"
+
+             />
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

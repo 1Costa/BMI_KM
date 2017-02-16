@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">BMI_KM</string>
+    <string name="height">Height</string>
+    <string name="cmValue">100</string>
+    <string name="cmLabel">cm</string>
+    <string name="ftValue">3</string>
+    <string name="ftLabel">ft</string>
+    <string name="inchValue">3</string>
+    <string name="inchLabel">in</string>
+    <string name="weight">Weight</string>
+    <string name="kgValue">0</string>
+    <string name="kgLabel">kg</string>
+    <string name="stValue">0</string>
+    <string name="stLabel">st</string>
+    <string name="lbsValue">0</string>
+    <string name="lbsLabel">lbs</string>
+    <!-- <string name="buttonCalculate">Calculate</string> -->
+    <string name="bmi_ResultLabel">BMI Index</string>
+
+    <string name="bmi_index">BMI Index</string>
+    <string name="underweight">Underweight</string>
+    <string name="underweightDesc">According to your BMI,
+        you are underweight and it is recommended you see a GP.
+        Many people are naturally slim and are still healthy.
+        But be aware that being underweight means you are more
+        likely to get osteoporosis.</string>
+
+    <string name="normal_weight">Normal Weight</string>
+    <string name="normal_weightDesc">According to your BMI you fall into
+        the healthy weight range. This means you are less likely to develop
+        weight related problems such as type 2 diabetes, heart disease
+        and certain cancers. Continue to eat a good balanced diet
+        and be physically active regularly.</string>
+
+    <string name="over_weight">Overweight</string>
+    <string name="over_weightDesc">This BMI indicates you are overweight.
+        There is an increased risk of developing heart disease,
+        type 2 diabetes and certain cancers with a BMI in this range.
+        Losing weight is beneficial and can be achieved through healthy
+        eating and being active daily. It is a good idea to set a realistic
+        target of amount of weight you would like to lose over a number of weeks.
+        If you are muscular as a result of a lot of sport
+        you don’t need to lose weight.</string>
+
+    <string name="obesity">Obesity</string>
+    <string name="obesitytDesc">According to your BMI you fall into the
+        obese category. Your risk of weight related diseases such
+        as type 2 diabetes and heart disease is increased.
+        Seek advice from a GP for a medical examination before
+        losing weight due to the increased risk of weight related
+        diseases. It is a good idea to set a realistic target of
+        amount of weight you would like to lose
+        over a number of weeks.</string>
+    <string name="morbid_obesity">Morbid Obesity</string>
+    <string name="obesityExtraDesc">A BMI over 35 means you are very obese.
+        You are also more likely to be storing fat around your waist
+        which significantly increases your risk of diseases such as
+        heart disease, type 2 diabetes and certain cancers.
+        Seek advice from a GP regarding weight loss and meal
+        plans to help with the weight loss process.</string>
+
+    <string name="uIndex">Index less than 18.5</string>
+    <string name="nIndex">Index in between 18.5 and 24.9</string>
+    <string name="oIndex">Index in between 25 and 29.9</string>
+    <string name="obIndex">Index greater than 30</string>
+    <string name="obExtraIndex">Index greater than 35</string>
+
+    <!-- Menu strings -->
+    <string name="use_both_systems">Display Both Systems</string>
+    <string name="useCm">Metric System</string>
+    <string name="useInches">Imperial System</string>
+    <string name="buttonGetDetails">Get Details</string>
+    <string name="bmiIndexLabel">Your BMI Index</string>
+
+</resources>

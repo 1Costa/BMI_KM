@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.konstantin.bmi_km.DetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/backgroundpetals"
+        android:id="@+id/imageViewD"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="@string/bmiIndexLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmiIndexLabel"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="BMI Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmiIndexResultView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Weight Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weightResult"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textSize="30sp"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <TextView
+                android:text="Index in between"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/indexInBetween"
+                android:paddingTop="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/descriptionView"
+                android:lineSpacingExtra="8sp"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:paddingTop="24dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

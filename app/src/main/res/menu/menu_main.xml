@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/centimeters"
+        app:showAsAction="never"
+        android:title="@string/useCm"
+        android:orderInCategory="1" />
+
+    <item
+        android:id="@+id/pounds"
+        app:showAsAction="never"
+        android:title="@string/useInches"
+        android:orderInCategory="2" />
+
+    <item
+        android:id="@+id/use_both_systems"
+        android:title="@string/use_both_systems"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
